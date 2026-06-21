@@ -185,3 +185,151 @@ Recall
 F1-Score
 Confusion Matrix
 
+# 🩺 Diabetes Prediction using Support Vector Machine (SVM)
+
+## 📌 Project Overview
+This project predicts whether a person is diabetic or non-diabetic using a **Support Vector Machine (SVM)** classifier.
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- Pickle
+
+---
+
+## 📂 Dataset
+Dataset used: `diabetes.csv`
+
+Place the dataset file in the same directory as the Python script.
+
+---
+
+## 🚀 Workflow
+
+1. **Import Required Libraries**
+   - Import Pandas, NumPy, Scikit-learn, and Pickle libraries.
+
+2. **Load Dataset**
+   - Read the diabetes dataset using Pandas.
+
+3. **Data Exploration**
+   - Check dataset shape, summary statistics, and class distribution.
+
+4. **Feature & Target Separation**
+   - Split data into features (`X`) and target (`y`).
+
+5. **Data Standardization**
+   - Apply `StandardScaler` to standardize feature values.
+
+6. **Train-Test Split**
+   - Split dataset into training and testing sets (80:20).
+
+7. **Model Training**
+   - Train an SVM classifier with a linear kernel.
+
+8. **Model Evaluation**
+   - Evaluate model performance using Accuracy Score.
+
+9. **Prediction on New Data**
+   - Predict whether a person is diabetic or non-diabetic using custom input values.
+
+10. **Model Saving**
+    - Save the trained model using Pickle.
+
+11. **Load Saved Model**
+    - Load the saved model and make predictions.
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install pandas numpy scikit-learn
+python diabetes_prediction.py
+```
+
+---
+
+## 📊 Evaluation Metrics
+- Training Accuracy
+- Testing Accuracy
+
+# 🍷 Wine Quality Prediction using XGBoost
+
+## 📌 Project Overview
+This project predicts the quality of wine using an **XGBoost Classifier**. Missing values are handled using mean imputation, and the model is trained to classify wine quality levels.
+
+---
+
+## 🛠️ Technologies Used
+- Python
+- Pandas
+- NumPy
+- Scikit-learn
+- XGBoost
+
+---
+
+## 📂 Dataset
+Dataset used: `winequalityy.csv`
+
+Place the dataset file in the same directory as the Python script.
+
+---
+
+## 🚀 Workflow
+
+1. **Import Required Libraries**
+   - Import Pandas, NumPy, Scikit-learn, and XGBoost libraries.
+
+2. **Load Dataset**
+   - Read the wine quality dataset using Pandas.
+
+3. **Data Exploration**
+   - Display dataset columns and inspect the data.
+
+4. **Feature & Target Separation**
+   - Split data into features (`X`) and target (`y`).
+
+5. **Label Reindexing**
+   - Convert quality labels to zero-based indexing for XGBoost compatibility.
+
+6. **Handle Missing Values**
+   - Replace missing values using mean imputation.
+
+7. **Train-Test Split**
+   - Split the dataset into training and testing sets.
+
+8. **Model Training**
+   - Train an XGBoost classifier with optimized hyperparameters.
+
+9. **Model Evaluation**
+   - Evaluate model performance using:
+     - Accuracy Score
+     - Classification Report
+
+10. **Analyze Class Distribution**
+    - Check the distribution of wine quality classes.
+
+---
+
+## ▶️ How to Run
+
+```bash
+pip install pandas numpy scikit-learn xgboost
+python wine_quality_prediction.py
+```
+
+---
+
+## 📊 Evaluation Metrics
+- Accuracy Score
+- Precision
+- Recall
+- F1-Score
+- Classification Report
+
